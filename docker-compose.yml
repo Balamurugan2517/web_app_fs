@@ -1,0 +1,13 @@
+# Local PostgreSQL for development and integration tests:  docker compose up -d db
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: luxe
+      POSTGRES_PASSWORD: luxe_dev_password
+      POSTGRES_DB: luxe_thread
+    ports: ["5432:5432"]
+    volumes: ["pgdata:/var/lib/postgresql/data"]
+    healthcheck: { test: ["CMD-SHELL", "pg_isready -U luxe -d luxe_thread"], interval: 5s, retries: 10 }
+volumes:
+  pgdata:

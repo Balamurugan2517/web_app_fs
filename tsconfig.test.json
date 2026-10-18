@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "node16",
+    "moduleResolution": "node16",
+    "outDir": ".test-build",
+    "rootDir": "src",
+    "noEmit": false,
+    "incremental": false,
+    "plugins": [],
+    "types": ["node"]
+  },
+  "include": ["src/lib/**/*.ts", "src/data/**/*.ts", "src/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}

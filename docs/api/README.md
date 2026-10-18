@@ -1,0 +1,47 @@
+**fashion-store**
+
+***
+
+# fashion-store
+
+## Modules
+
+- [lib/admin-auth](lib/admin-auth/README.md)
+- [lib/admin-session](lib/admin-session/README.md)
+- [lib/cancellation](lib/cancellation/README.md)
+- [lib/cart-preview](lib/cart-preview/README.md)
+- [lib/catalog-import](lib/catalog-import/README.md)
+- [lib/constants](lib/constants/README.md)
+- [lib/coupons](lib/coupons/README.md)
+- [lib/crypto](lib/crypto/README.md)
+- [lib/csv](lib/csv/README.md)
+- [lib/dates](lib/dates/README.md)
+- [lib/db](lib/db/README.md)
+- [lib/env](lib/env/README.md)
+- [lib/errors](lib/errors/README.md)
+- [lib/http](lib/http/README.md)
+- [lib/logger](lib/logger/README.md)
+- [lib/media](lib/media/README.md)
+- [lib/money](lib/money/README.md)
+- [lib/notifications/outbox](lib/notifications/outbox/README.md)
+- [lib/notifications/providers](lib/notifications/providers/README.md)
+- [lib/notifications/templates](lib/notifications/templates/README.md)
+- [lib/orders/service](lib/orders/service/README.md)
+- [lib/orders/status](lib/orders/status/README.md)
+- [lib/password](lib/password/README.md)
+- [lib/policies](lib/policies/README.md)
+- [lib/pricing](lib/pricing/README.md)
+- [lib/rate-limit](lib/rate-limit/README.md)
+- [lib/razorpay](lib/razorpay/README.md)
+- [lib/razorpay-client](lib/razorpay-client/README.md)
+- [lib/reports](lib/reports/README.md)
+- [lib/repos/admin](lib/repos/admin/README.md)
+- [lib/repos/catalog](lib/repos/catalog/README.md)
+- [lib/repos/orders](lib/repos/orders/README.md)
+- [lib/shiprocket](lib/shiprocket/README.md)
+- [lib/site-config](lib/site-config/README.md)
+- [lib/sizes](lib/sizes/README.md)
+- [lib/validation](lib/validation/README.md)
+- [types/cart](types/cart/README.md)
+- [types/order](types/order/README.md)
+- [types/product](types/product/README.md)

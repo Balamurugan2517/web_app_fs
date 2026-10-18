@@ -1,0 +1,29 @@
+---
+description: Pro-level Tailwind CSS v4 standards, responsive design, and styling guidelines for the fashion-store project
+globs: src/**/*.tsx, src/**/*.css
+alwaysApply: false
+---
+
+# Tailwind CSS v4 Development Guidelines
+
+## 1. Core Principles
+- **Utility-First:** Prioritize utility classes over custom CSS files or inline styles. Keep design tokens aligned with Tailwind v4 CSS variables.
+- **Mobile-First Design:** Always design layouts starting from mobile screens (`sm:`, `md:`, `lg:`, `xl:`).
+- **Readability & Ordering:** Group utility classes logically (Layout $\rightarrow$ Spacing $\rightarrow$ Typography $\rightarrow$ Visuals/Colors $\rightarrow$ States).
+
+## 2. Tailwind v4 Specific Rules
+- **CSS-First Configuration:** Use the modern Tailwind v4 `@import "tailwindcss";` syntax in your main stylesheet rather than legacy JS config files.
+- **Dynamic Values:** Use arbitrary values sparingly (e.g., `w-[324px]`); prefer design system spacing scales (`w-80`, `max-w-xl`) unless pixel-perfection requires otherwise.
+
+## 3. E-Commerce UI & Layout Patterns (Fashion Store Context)
+- **Product Grids:** Use responsive CSS grid for product listings:
+  `grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6`
+- **Image Handling:** Ensure product card images maintain aspect ratios using object-fit utilities:
+  `aspect-[3/4] object-cover w-full h-full rounded-lg`
+- **Interactive States:** Always include smooth transitions and focus/hover states for interactive UI elements:
+  `transition-all duration-200 ease-in-out hover:opacity-90 focus:ring-2 focus:ring-offset-2`
+
+## 4. Anti-Patterns to Avoid
+- ❌ **Do not** mix conflicting display utilities (e.g., `flex` and `grid` on the same element).
+- ❌ **Do not** hardcode hex colors or font sizes when Tailwind design tokens are available.
+- ❌ **Do not** create heavy custom CSS classes for things that can be cleanly composed using Tailwind utility combinations.

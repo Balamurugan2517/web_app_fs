@@ -1,0 +1,9 @@
+{
+  "entryPoints": ["./src/lib", "./src/data", "./src/types"],
+  "entryPointStrategy": "expand",
+  "exclude": ["**/__tests__/**", "**/*.test.ts"],
+  "out": "docs/api",
+  "plugin": ["typedoc-plugin-markdown"],
+  "readme": "none",
+  "skipErrorChecking": true
+}

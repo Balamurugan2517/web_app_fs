@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* Brand design tokens. Use these utility names (bg-sandalwood, text-maroon, ...) instead of raw hex codes. */
+@theme inline {
+  --color-sandalwood: #faf6f0;
+  --color-cream: #faf0e6;
+  --color-maroon: #4a151b;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-playfair);
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  :focus-visible { outline: 2px solid var(--color-maroon); outline-offset: 2px; }
+}
